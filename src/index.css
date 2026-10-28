@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    font-family: var(--font-sans);
+  }
+}
+
+.font-display {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+/* Custom glow utilities */
+.glow-red {
+  box-shadow: 0 0 25px -4px rgba(255, 48, 48, 0.45);
+}
+
+.glow-red-lg {
+  box-shadow: 0 0 45px -4px rgba(255, 48, 48, 0.35);
+}
+
+.text-glow {
+  text-shadow: 0 0 16px rgba(255, 48, 48, 0.4);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF3030;
+}
+

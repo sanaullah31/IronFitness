@@ -1,0 +1,6 @@
+{
+  "name": "IronFit Gym & Fitness Club",
+  "description": "Build Strength. Transform Yourself. Premier fitness club, personal training, bodybuilding, and wellness center.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
