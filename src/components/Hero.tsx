@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, ChevronDown, Flame } from 'lucide-react';
-import { BUSINESS_INFO } from '../data/gymData';
+import { BUSINESS_INFO, GYM_IMAGES } from '../data/gymData';
 
 interface HeroProps {
   onOpenJoinModal: () => void;
@@ -13,14 +13,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenJoinModal, onExplorePrograms }
       {/* Background Image with High-Impact Contrast Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_gym_workout_1793170255787.jpg"
+          src={GYM_IMAGES.hero}
           alt="Athlete performing heavy deadlift at IronFit Gym"
           className="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-in motion-safe:fade-in duration-1000"
           referrerPolicy="no-referrer"
           loading="eager"
         />
         {/* Multi-tier gradient overlay ensuring WCAG AA contrast */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/75 to-[#0B0B0B]/85" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B]/90 via-[#0B0B0B]/35 to-[#0B0B0B]/45" />
         <div className="absolute inset-0 bg-radial-[at_top_right] from-red-600/15 via-transparent to-transparent pointer-events-none" />
       </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Dumbbell, Trophy, Activity, CheckCircle2 } from 'lucide-react';
-import { BUSINESS_INFO } from '../data/gymData';
+import { BUSINESS_INFO, GYM_IMAGES } from '../data/gymData';
 
 interface AboutProps {
   onOpenJoinModal: () => void;
@@ -39,7 +39,7 @@ export const About: React.FC<AboutProps> = ({ onOpenJoinModal }) => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-xl overflow-hidden border border-neutral-800 shadow-2xl group">
               <img
-                src="/src/assets/images/about_gym_facility_1793170256835.jpg"
+                src={GYM_IMAGES.facility}
                 alt="IronFit Gym & Fitness Club premium training facility"
                 className="w-full h-[400px] sm:h-[480px] lg:h-[540px] object-cover object-center group-hover:scale-102 transition-transform duration-700"
                 loading="lazy"
