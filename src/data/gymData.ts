@@ -1,4 +1,15 @@
 import { FitnessProgram, MembershipPlan, Trainer, GalleryItem, Testimonial, FAQItem } from '../types';
+import facilityImage from '../assets/images/about_gym_facility_1793170256835.jpg';
+import cardioImage from '../assets/images/cardio_functional_fitness_1793170257195.jpg';
+import heroImage from '../assets/images/hero_gym_workout_1793170255787.jpg';
+import strengthImage from '../assets/images/strength_training_session_1793170256889.jpg';
+
+export const GYM_IMAGES = {
+  facility: facilityImage,
+  cardio: cardioImage,
+  hero: heroImage,
+  strength: strengthImage
+};
 
 export const BUSINESS_INFO = {
   name: "IronFit Gym & Fitness Club",
@@ -43,7 +54,7 @@ export const FITNESS_PROGRAMS: FitnessProgram[] = [
     schedule: "Mon, Wed, Fri · 6:00 AM & 6:00 PM",
     coach: "Marcus Vance, CSCS",
     targetAudience: "Anyone looking to increase maximum physical strength, bone density, and barbell mastery.",
-    image: "/src/assets/images/strength_training_session_1793170256889.jpg"
+    image: GYM_IMAGES.strength
   },
   {
     id: "weight-loss-fat-burning",
@@ -63,7 +74,7 @@ export const FITNESS_PROGRAMS: FitnessProgram[] = [
     schedule: "Daily · 7:00 AM, 12:00 PM & 5:30 PM",
     coach: "Elena Rostova, CPT",
     targetAudience: "Individuals looking to reduce body fat percentage, boost cardiovascular stamina, and tone muscle.",
-    image: "/src/assets/images/cardio_functional_fitness_1793170257195.jpg"
+    image: GYM_IMAGES.cardio
   },
   {
     id: "personal-training",
@@ -83,7 +94,7 @@ export const FITNESS_PROGRAMS: FitnessProgram[] = [
     schedule: "Flexible Booking · Mon–Sun 5:00 AM – 10:00 PM",
     coach: "David Sterling, Head of Performance",
     targetAudience: "Those who want accelerated results, bespoke accountability, or targeted athletic rehabilitation.",
-    image: "/src/assets/images/hero_gym_workout_1793170255787.jpg"
+    image: GYM_IMAGES.hero
   },
   {
     id: "bodybuilding",
@@ -103,7 +114,7 @@ export const FITNESS_PROGRAMS: FitnessProgram[] = [
     schedule: "Mon to Sat · 8:00 AM & 7:00 PM",
     coach: "Marcus Vance & David Sterling",
     targetAudience: "Serious lifters seeking visible muscular hypertrophy, definition, and aesthetic proportion.",
-    image: "/src/assets/images/hero_gym_workout_1793170255787.jpg"
+    image: GYM_IMAGES.hero
   },
   {
     id: "cardio-endurance",
@@ -123,7 +134,7 @@ export const FITNESS_PROGRAMS: FitnessProgram[] = [
     schedule: "Tue, Thu, Sat · 6:30 AM & 6:30 PM",
     coach: "Sarah Chen, Endurance Specialist",
     targetAudience: "Runners, hybrid athletes, and anyone wanting to climb flights of stairs without gasping for breath.",
-    image: "/src/assets/images/cardio_functional_fitness_1793170257195.jpg"
+    image: GYM_IMAGES.cardio
   },
   {
     id: "functional-fitness",
@@ -143,7 +154,7 @@ export const FITNESS_PROGRAMS: FitnessProgram[] = [
     schedule: "Mon, Wed, Fri · 7:30 AM & 5:00 PM",
     coach: "Sarah Chen, CSCS",
     targetAudience: "Athletes, weekend warriors, and active adults seeking injury-free agility and multi-directional strength.",
-    image: "/src/assets/images/about_gym_facility_1793170256889.jpg"
+    image: GYM_IMAGES.facility
   },
   {
     id: "muscle-building",
@@ -163,7 +174,7 @@ export const FITNESS_PROGRAMS: FitnessProgram[] = [
     schedule: "Mon, Tue, Thu, Fri · 9:00 AM & 6:30 PM",
     coach: "David Sterling, Head Coach",
     targetAudience: "Hardgainers and beginners wanting to pack on 10–20 lbs of clean lean muscle naturally.",
-    image: "/src/assets/images/strength_training_session_1793170256889.jpg"
+    image: GYM_IMAGES.strength
   },
   {
     id: "group-fitness-classes",
@@ -183,7 +194,7 @@ export const FITNESS_PROGRAMS: FitnessProgram[] = [
     schedule: "Mon to Sat · 6:00 AM, 9:30 AM & 6:00 PM",
     coach: "Elena Rostova & Team Coaches",
     targetAudience: "Members who thrive in high-energy group atmospheres and love motivational team workouts.",
-    image: "/src/assets/images/about_gym_facility_1793170256835.jpg"
+    image: GYM_IMAGES.facility
   }
 ];
 
@@ -258,7 +269,7 @@ export const TRAINERS: Trainer[] = [
     bio: "Former collegiate powerlifter and CSCS coach with over a decade specializing in biomechanics, maximal force production, and competitive physique preparation.",
     certifications: ["CSCS (NSCA)", "USA Weightlifting Level 2", "FMS Certified"],
     achievements: ["Coached 40+ state and national powerlifting podiums", "Over 1,200 member transformations"],
-    image: "/src/assets/images/hero_gym_workout_1793170255787.jpg",
+    image: GYM_IMAGES.hero,
     socials: {
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com"
@@ -272,7 +283,7 @@ export const TRAINERS: Trainer[] = [
     bio: "Specializing in sustainable fat loss and high-octane metabolic circuits. Elena combines heart-rate telemetry with science-backed nutrition to spark long-term results.",
     certifications: ["NASM-CPT", "Precision Nutrition Level 2", "Kettlebell Athletics"],
     achievements: ["Featured wellness keynote coach", "Lost 50 lbs herself before going pro"],
-    image: "/src/assets/images/cardio_functional_fitness_1793170257195.jpg",
+    image: GYM_IMAGES.cardio,
     socials: {
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com"
@@ -286,7 +297,7 @@ export const TRAINERS: Trainer[] = [
     bio: "Master trainer focused on mind-muscle connection, structural symmetry, and joint-friendly muscle building for executives and busy professionals.",
     certifications: ["ISSA Master Trainer", "BioForce Conditioning Coach", "TRX Master"],
     achievements: ["Men's Physique regional champion", "Authored 12-week hypertrophy guidebook"],
-    image: "/src/assets/images/strength_training_session_1793170256889.jpg",
+    image: GYM_IMAGES.strength,
     socials: {
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com"
@@ -300,7 +311,7 @@ export const TRAINERS: Trainer[] = [
     bio: "Dedicated to functional longevity and explosive agility. Sarah guides athletes through speed ladders, Olympic pulls, and hip-spine restorative mechanics.",
     certifications: ["EXOS Performance Specialist", "FRC Mobility Coach", "CPR/AED Pro"],
     achievements: ["Trained marathoners & CrossFit competitors", "Post-rehab athletic specialist"],
-    image: "/src/assets/images/about_gym_facility_1793170256835.jpg",
+    image: GYM_IMAGES.facility,
     socials: {
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com"
@@ -314,56 +325,56 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: "Heavy Barbell Training Arena",
     category: "Weights",
     description: "Deadlift platforms with calibrated competition plates and Eleiko barbells.",
-    imageUrl: "/src/assets/images/hero_gym_workout_1793170255787.jpg"
+    imageUrl: GYM_IMAGES.hero
   },
   {
     id: "gal-2",
     title: "Olympic Racks & Sled Turf",
     category: "Facility",
     description: "Ultra-clean 50-meter indoor turf track and heavy-duty commercial squat cages.",
-    imageUrl: "/src/assets/images/about_gym_facility_1793170256835.jpg"
+    imageUrl: GYM_IMAGES.facility
   },
   {
     id: "gal-3",
     title: "Pair Incline Dumbbell Bench Press",
     category: "Weights",
     description: "Precision dumbbell rows and ergonomic benches ranging from 5 to 150 lbs.",
-    imageUrl: "/src/assets/images/strength_training_session_1793170256889.jpg"
+    imageUrl: GYM_IMAGES.strength
   },
   {
     id: "gal-4",
     title: "Explosive Battle Ropes Zone",
     category: "Functional",
     description: "High-intensity conditioning stations engineered for maximal aerobic endurance.",
-    imageUrl: "/src/assets/images/cardio_functional_fitness_1793170257195.jpg"
+    imageUrl: GYM_IMAGES.cardio
   },
   {
     id: "gal-5",
     title: "Powerlifting Deadlift Pit",
     category: "Weights",
     description: "Rubberized shock-absorbent platforms designed for heavy drop deadlifts.",
-    imageUrl: "/src/assets/images/hero_gym_workout_1793170255787.jpg"
+    imageUrl: GYM_IMAGES.hero
   },
   {
     id: "gal-6",
     title: "Turf Sprint & Agility Zone",
     category: "Functional",
     description: "Marked turf lanes for prowler pushes, farmer carries, and sprint intervals.",
-    imageUrl: "/src/assets/images/about_gym_facility_1793170256835.jpg"
+    imageUrl: GYM_IMAGES.facility
   },
   {
     id: "gal-7",
     title: "Kettlebell & Conditioning Area",
     category: "Cardio",
     description: "Cast iron competition kettlebells and medicine ball rebound walls.",
-    imageUrl: "/src/assets/images/strength_training_session_1793170256889.jpg"
+    imageUrl: GYM_IMAGES.strength
   },
   {
     id: "gal-8",
     title: "Group Studio & Recovery Arena",
     category: "Facility",
     description: "Spacious training room with red neon accent lighting and state-of-the-art sound.",
-    imageUrl: "/src/assets/images/cardio_functional_fitness_1793170257195.jpg"
+    imageUrl: GYM_IMAGES.cardio
   }
 ];
 
