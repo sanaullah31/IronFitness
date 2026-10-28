@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# IronFit Gym & Fitness Club
 
-# Run and deploy your AI Studio app
+A modern, responsive gym and fitness club website built with React, TypeScript, and Vite.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/e02c62eb-1c3b-4009-995b-be8b13e14778
+- Responsive design for desktop, tablet, and mobile.
+- Modern fitness-focused UI.
+- Home, About, Programs, Trainers, Membership, and Contact sections.
+- Membership inquiry interface.
+- Fitness transformation gallery.
+- FAQ section.
+- WhatsApp contact integration.
 
-## Run Locally
+## Technologies
 
-**Prerequisites:**  Node.js
+- React
+- TypeScript
+- Vite
+- CSS
+- Lucide React icons
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+## Project Status
+
+Website developed as a modern gym and fitness club web project.
